@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+## What is this plugin about?
 
-You can use the [editor on GitHub](https://github.com/timify/joomla-plugin/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This plugin installs the TIMIFY booking widget to your Joomla website. You can define the type, position and language of the button in the settings page of the plugin directly from your Joomla admin panel.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation steps
 
-### Markdown
+The installation of the plugin is pretty easy. Simply follow the steps bellow:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Step 1
 
-```markdown
-Syntax highlighted code block
+First, you should download the latest version of the Joomla plugin. Simply click the download button in the web application or you can download the latest version from the link bellow. It's advisable to always have the latest plugin version so come around from time to time to see if you're still working with the latest version.
 
-# Header 1
-## Header 2
-### Header 3
+[Download now](https://github.com/timify/joomla-plugin/archive/master.zip)
 
-- Bulleted
-- List
+### Step 2
 
-1. Numbered
-2. List
+Next, login to your joomla website as an administrator in order to install the plugin. In the navigation, click the menu item “Extensions”  and choose "Manage > Install" from the dropdown menu. Then click on “Upload Packcage File” and upload your file then click the "Upload & Install" button.
 
-**Bold** and _Italic_ and `Code` text
+![TIMIFY Appointment booking with Joomla](http://www.clients.webmedia7.com/timify/cms-plugins-github/joomla-timify-booking.png)
 
-[Link](url) and ![Image](src)
-```
+### Step 3
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Once you have installed the plugin go to"Extensions" then select“Plugins” from the dropdown menu.
 
-### Jekyll Themes
+### Step 4
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/timify/joomla-plugin/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+From the list click on"TIMIFY Widget".
 
-### Support or Contact
+### Step 5
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Copy your booking ID from the TIMIFY Web App and paste it in "Your TIMIFY ID" field in Joomla. You will find your booking ID in the TIMIFY Web App at the bottom of the page “Booking buttons”  in the section “Online booking”.
+
+### Step 6
+
+Define the position of the button. We offer you three options:
+- button on the right & button on the left, which will show always on all your pages
+- button at the end of every post. Here you will be able also to define the label for this button. 
+
+### Step 7
+
+Finally, find the "Status" field and set it to "Enable" then click the "Save" button
+
+### Step 8
+
+Additionally you have the option to define the main language the widget should be displayed. If your country is not displayed in the list please write an email to support{at}timify.com
+
+## That's it!
