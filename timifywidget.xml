@@ -1,72 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="content">
-  <name>PLG_CONTENT_TIMIFY_WIDGET_TITLE</name>
-  <author>Timify</author>
-  <creationDate>April 11th, 2017</creationDate>
-  <copyright>Timify</copyright>
-  <license>GNU General Public License</license>
-  <authorEmail>hello@timify.com</authorEmail>
-  <authorUrl>http://www.timify.com</authorUrl>
-  <version>1.0.0</version>
-  <description>PLG_CONTENT_TIMIFY_WIDGET_DESCRIPTION</description>
-  <files>
-    <filename plugin="timifywidget">timifywidget.php</filename>
-    <filename>index.html</filename>
-  </files>
-  <languages>
+	<name>PLG_CONTENT_TIMIFY_WIDGET_TITLE</name>
+  	<author>Timify</author>
+  	<creationDate>April 11th, 2017</creationDate>
+  	<copyright>Timify</copyright>
+  	<license>GNU General Public License</license>
+  	<authorEmail>hello@timify.com</authorEmail>
+  	<authorUrl>http://www.timify.com</authorUrl>
+  	<version>1.0.0</version>
+  	<description>PLG_CONTENT_TIMIFY_WIDGET_DESCRIPTION</description>
+  	<files>
+    	<filename plugin="timifywidget">timifywidget.php</filename>
+    	<filename>index.html</filename>
+  	</files>
+  	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_content_timifywidget.sys.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_content_timifywidget.ini</language>
-  </languages>
-  <config>
-    <fields name="params">
-      <fieldset name="basic">
+  	</languages>
+  	<config>
+    	<fields name="params">
+      		<fieldset name="basic">
 
-        <field
-          name="timify_widget_id"
-          type="text"
-          label="PLG_CONTENT_TIMIFY_WIDGET_TIMIFY_ID"
-          default=""
-        />
+        		<field name="timify_widget_id"
+					   type="text"
+					   label="PLG_CONTENT_TIMIFY_WIDGET_TIMIFY_ID"
+					   default=""
+				/>
 
-        <field
-					name="timify_widget_language"
-					type="list"
-					label="PLG_CONTENT_TIMIFY_WIDGET_CHOOSE_LANGUAGE"
-					default="en"
-					>
+        		<field name="timify_widget_language"
+					   type="list"
+					   label="PLG_CONTENT_TIMIFY_WIDGET_CHOOSE_LANGUAGE"
+					   default="en">
 					<option value="en">English</option>
 					<option value="de">Deutschland</option>
 					<option value="ee">Eesti</option>
-          <option value="es">España</option>
-          <option value="fr">France</option>
-          <option value="hu">Hungary</option>
-          <option value="it">Italia</option>
-          <option value="nl">Nederland</option>
-          <option value="ru">Россия</option>
-          <option value="zh">台灣</option>
-          <option value="ph">Philippines</option>
+					<option value="es">España</option>
+					<option value="fr">France</option>
+					<option value="hu">Hungary</option>
+					<option value="it">Italia</option>
+					<option value="nl">Nederland</option>
+					<option value="ru">Россия</option>
+					<option value="zh">台灣</option>
+					<option value="ph">Philippines</option>
 				</field>
 
-        <field
-					name="timify_widget_position"
-					type="list"
-					label="PLG_CONTENT_TIMIFY_WIDGET_CHOOSE_POSITION"
-					default="left"
-					>
+        		<field name="timify_widget_position"
+					   type="list"
+					   label="PLG_CONTENT_TIMIFY_WIDGET_CHOOSE_POSITION"
+					   default="left">
 					<option value="left">PLG_CONTENT_TIMIFY_WIDGET_POSITION_LEFT</option>
 					<option value="right">PLG_CONTENT_TIMIFY_WIDGET_POSITION_RIGHT</option>
-          <option value="after_post">PLG_CONTENT_TIMIFY_WIDGET_POSITION_AFTER_POST</option>
+          			<option value="after_post">PLG_CONTENT_TIMIFY_WIDGET_POSITION_AFTER_POST</option>
 				</field>
 
-        <field
-          name="timify_widget_button_label"
-          type="text"
-          label="PLG_CONTENT_TIMIFY_WIDGET_BUTTON_LABEL"
-          default="Book an appointment"
-          showon="timify_widget_position:after_post"
-        />
+        		<field name="timify_widget_button_label"
+					   type="text"
+					   label="PLG_CONTENT_TIMIFY_WIDGET_BUTTON_LABEL"
+					   default="Book an appointment"
+					   showon="timify_widget_position:after_post"
+        		/>
 
-      </fieldset>
-    </fields>
-  </config>
+      		</fieldset>
+    	</fields>
+  	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Timify Widget">https://raw.githubusercontent.com/timify/joomla-plugin/master/updateserver/update.xml</server>
+	</updateservers>
 </extension>
