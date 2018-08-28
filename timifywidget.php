@@ -8,7 +8,7 @@ class plgContentTimifyWidget extends JPlugin {
 	/**
 	 *	Use this method to show booking button after each article
 	 */
-	public function onContentAfterDisplay($context, &$article, &$params, $limitstart) {
+	public function onContentAfterDisplay($context, &$article, &$params, $limitstart = 1) {
 
 		$timifyWidgetId					= $this->params->get('timify_widget_id', false);
 		$timifyWidgetLanguage		= $this->params->get('timify_widget_language', false);
@@ -30,14 +30,14 @@ class plgContentTimifyWidget extends JPlugin {
 	/**
 	 *	Use this method to append booking javascript code before closing the body tag
 	 */
-  public function onAfterRender() {
-    $app      = JFactory::getApplication();
+	public function onAfterRender() {
+		$app      = JFactory::getApplication();
 
-    if ($app->getName() != 'site') {
-        return true;
-    }
+		if ($app->getName() != 'site') {
+			return true;
+		}
 
-    $buffer   = JFactory::getApplication()->getBody();
+		$buffer   = JFactory::getApplication()->getBody();
 
 		$timifyWidgetId					= $this->params->get('timify_widget_id', false);
 		$timifyWidgetLanguage		= $this->params->get('timify_widget_language', false);
@@ -60,10 +60,10 @@ class plgContentTimifyWidget extends JPlugin {
 			$buffer   = str_ireplace('</body>', $widget . '</body>', $buffer);
 		}
 
-    JFactory::getApplication()->setBody($buffer);
+		JFactory::getApplication()->setBody($buffer);
 
-    return true;
-  }
+		return true;
+	}
 
 }
 
