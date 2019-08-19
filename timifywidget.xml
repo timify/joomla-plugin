@@ -7,7 +7,7 @@
   	<license>GNU General Public License</license>
   	<authorEmail>hello@timify.com</authorEmail>
   	<authorUrl>http://www.timify.com</authorUrl>
-  	<version>1.0.0</version>
+  	<version>2.0.0</version>
   	<description>PLG_CONTENT_TIMIFY_WIDGET_DESCRIPTION</description>
   	<files>
     	<filename plugin="timifywidget">timifywidget.php</filename>
@@ -30,18 +30,18 @@
         		<field name="timify_widget_language"
 					   type="list"
 					   label="PLG_CONTENT_TIMIFY_WIDGET_CHOOSE_LANGUAGE"
-					   default="en">
-					<option value="en">English</option>
-					<option value="de">Deutschland</option>
-					<option value="ee">Eesti</option>
-					<option value="es">España</option>
-					<option value="fr">France</option>
-					<option value="hu">Hungary</option>
-					<option value="it">Italia</option>
-					<option value="nl">Nederland</option>
-					<option value="ru">Россия</option>
-					<option value="zh">台灣</option>
-					<option value="ph">Philippines</option>
+					   default="en-gb">
+					<option value="en-gb">English</option>
+					<option value="de-de">Deutschland</option>
+					<option value="et-ee">Eesti</option>
+					<option value="es-es">España</option>
+					<option value="fr-fr">France</option>
+					<option value="hu-hu">Hungary</option>
+					<option value="it-it">Italia</option>
+					<option value="nl-nl">Nederland</option>
+					<option value="ru-ru">Россия</option>
+					<option value="zh-tw">台灣</option>
+					<option value="en-ph">Philippines</option>
 				</field>
 
         		<field name="timify_widget_position"

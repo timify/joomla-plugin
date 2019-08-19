@@ -19,7 +19,7 @@ class plgContentTimifyWidget extends JPlugin {
 				$timifyWidgetPosition == 'after_post') {
 
 			$article->text			= $article->text .
-				'<button class="timify-button" data-id="' . $timifyWidgetId . '" style="height: 40px; background: #ca3b43; color: #fff; font-size: 14px; font-weight: normal; text-transform: uppercase; border: 0; padding: 0 15px; cursor: pointer; border-radius: 3px;">' .
+				'<button class="timify-button" data-account-id="' . $timifyWidgetId . '" style="height: 40px; background: #ca3b43; color: #fff; font-size: 14px; font-weight: normal; text-transform: uppercase; border: 0; padding: 0 15px; cursor: pointer; border-radius: 3px;">' .
 						($timifyWidgetButtonLabel !== false ? $timifyWidgetButtonLabel : 'Book an appointment') .
 				'</button>';
 		}
@@ -47,14 +47,14 @@ class plgContentTimifyWidget extends JPlugin {
 
 			$widget   = '<script async id="timify" ' .
 					($timifyWidgetPosition == 'left' || $timifyWidgetPosition == 'right' ?
-						'data-id="' . $timifyWidgetId . '"' : '') . '
-					data-lang="' . ($timifyWidgetLanguage !== false ? $timifyWidgetLanguage : 'en') . '"
+						'data-account-id="' . $timifyWidgetId . '"' : '') . '
+					data-locale="' . ($timifyWidgetLanguage !== false ? $timifyWidgetLanguage : 'en') . '"
 					type="text/javascript"
 					data-position="' . ($timifyWidgetPosition !== false ?
 															($timifyWidgetPosition == 'left' || $timifyWidgetPosition == 'right' ?
 															 $timifyWidgetPosition : 'multiple')
 															: 'left') . '"
-					src="https://widget.timify.com/js/widget.js">
+					src="https://book.timify.com/widget/widget.min.js">
 				</script>';
 
 			$buffer   = str_ireplace('</body>', $widget . '</body>', $buffer);
